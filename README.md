@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# Offline TODO App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple offline TODO app built with React.js. It allows you to create, complete, and reset todos. The app preserves the state even when the page is refreshed or the browser is closed, thanks to the use of localStorage.
 
-## Available Scripts
+## Key Features
 
-In the project directory, you can run:
+- Add new todos by typing in the input field and pressing Enter.
+- Click on a todo to mark it as complete. Completed todos are moved to the bottom of the list.
+- Active todos are displayed in order of creation (most recent on top).
+- Completed todos are displayed in order of completion (most recent on top).
+- Use the Reset button to clear all todos and return to the initial state.
+- The app works offline and retains the state even after a page refresh or browser closure.
 
-### `npm start`
+## Assumptions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- The app is designed to be used in modern web browsers such as Google Chrome and Mozilla Firefox.
+- No authentication or user management features are required for this app.
+- The app does not support editing or deleting individual todos. Once a todo is added, it cannot be modified or removed individually.
+- The styling and design of the app are kept minimal.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Unhandled Edge Cases
 
-### `npm test`
+- Duplicate Todos: The app currently allows adding duplicate todos with the same text. If needed, additional logic can be implemented to prevent the addition of duplicate todos.
+- Long Todo Text: The app does not handle long todo texts that may exceed the width of the container. Styling enhancements or truncation logic can be added to handle long texts gracefully.
+- Responsive Design: The current CSS styles are optimized for desktop screens. 
+## Usage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
 
-### `npm run build`
+```bash
+git clone # Offline TODO App
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This is a simple offline TODO app built with React.js. It allows you to create, complete, and reset todos. The app preserves the state even when the page is refreshed or the browser is closed, thanks to the use of localStorage.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Key Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Add new todos by typing in the input field and pressing Enter.
+- Click on a todo to mark it as complete. Completed todos are moved to the bottom of the list.
+- Active todos are displayed in order of creation (most recent on top).
+- Completed todos are displayed in order of completion (most recent on top).
+- Use the Reset button to clear all todos and return to the initial state.
+- The app works offline and retains the state even after a page refresh or browser closure.
 
-### `npm run eject`
+## Assumptions
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- The app is designed to be used in modern web browsers such as Google Chrome and Mozilla Firefox.
+- No authentication or user management features are required for this app.
+- The app does not support editing or deleting individual todos. Once a todo is added, it cannot be modified or removed individually.
+- The styling and design of the app are kept minimal and can be customized as per requirements.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Unhandled Edge Cases
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Duplicate Todos: The app currently allows adding duplicate todos with the same text. If needed, additional logic can be implemented to prevent the addition of duplicate todos.
+- Long Todo Text: The app does not handle long todo texts that may exceed the width of the container. Styling enhancements or truncation logic can be added to handle long texts gracefully.
+- Responsive Design: The current CSS styles are optimized for desktop screens. For optimal user experience on mobile or other devices, additional media queries and responsive design adjustments may be required.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+1. Clone the repository:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+git clone <repository_url>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Navigate to the project directory:
+bash
+Copy code
+cd react-app
 
-### Code Splitting
+Install dependencies:
+bash
+Copy code
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Start the development server:
+bash
+Copy code
+npm start
 
-### Analyzing the Bundle Size
+Open the app in your browser at https://todoappe.netlify.app/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Technologies Used
+React.js: A JavaScript library for building user interfaces.
+localStorage: Web storage API used to store and retrieve the todos locally.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+1. Clone the repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+git clone <repository_url>
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
